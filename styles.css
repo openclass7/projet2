@@ -1,6 +1,6 @@
 #all_page
 {
-	width: 900px;
+	width: 90%;
 	margin: auto;
 }
 
@@ -21,4 +21,23 @@ nav ul
 nav li
 {
 	margin-right:40px;
+}
+nav a
+{
+	text-decoration: none;
+}
+nav a:hover
+{
+	 
+	border-top: 3px blue solid;
+}
+header
+{
+	/*background: red;*/
+	display: flex;
+}
+nav
+{
+	display: flex;
+	flex-direction: row;
 }
