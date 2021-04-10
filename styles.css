@@ -27,35 +27,61 @@ form i
 	border: 2px #0065FC solid;
 }
 /*filtre css*/
-li:hover
+/*li:hover
 {
 	color: olive;
 	background: lightgreen;
 }
+*/
 
-#filtre ul
-{
-	list-style-type: none;
-	display: flex;
-}
+
+
+
 #filtre
-{
+{	width: 150%;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
+
 #filtre i
 {   background: #DEEBFF;
 	color: #0065fc;
-	padding: 8px;
-	border-radius: 16px;
+	padding: 12px;
+	border-radius: 24px;
 }
-#filtre li
+.titles
+{	
+	border: 3px solid #F2F2F2;
+	border-radius: 24px;
+	min-width: 10%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	padding-right: 3%;
+	font-size: 1em;
+
+
+}
+.titles:hover
 {
-	margin-right: 70px;
-	border: 1px solid lightgrey;
-	border-radius: 20px;
-	
-	vertical-align: 
+	color:#5f3dc4;
+	background:radial-gradient(#c5f6fa, #66d9e8 ,#3bc9db);
 }
+
+.item1
+{
+	margin-right: 3%;
+	
+}
+.item2
+{
+	text-indent: 1em;
+}
+
+
+
+
 /*css section*/
 
 #hebergement
@@ -152,6 +178,9 @@ header h1
 {
 	font-size: 1.3em;
 }
+
+/* filtre*/
+
 nav ul
 {
 	list-style-type: none;
@@ -190,6 +219,7 @@ nav
 {
 	display: flex;
 	flex-direction: row;
+	height: 30%;
 }
 
 body
