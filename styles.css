@@ -7,13 +7,36 @@
 form
 {
 	display: flex;
+	margin-bottom: 30px;
 }
-form i
+
+.marker
 {
   background: #F2F2F2;
   border: 2.7px #F2F2F2 solid;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 15px 0px 0px 15px;
+  height: 41px;
+  padding: auto;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+
+#search
+{
+	height: 38px;
+	border: 3px #F2F2F2 solid;
+	margin-left:-2px;
+	padding-left:10px; 
+
+}
+
 #search, #filtre,.hotel_n
 {
 	font-weight: bold;
@@ -21,21 +44,15 @@ form i
  
 #rechercher
 {
-	border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 15px 15px 0px;
 	color: white;
 	background: #0065FC;
 	border: 2px #0065FC solid;
+	height: 46px;
+	padding-right: 15px;
 }
+
 /*filtre css*/
-/*li:hover
-{
-	color: olive;
-	background: lightgreen;
-}
-*/
-
-
-
 
 #filtre
 {	width: 150%;
@@ -60,8 +77,6 @@ form i
 	align-items: center;
 	padding-right: 3%;
 	font-size: 1em;
-
-
 }
 .titles:hover
 {
@@ -72,7 +87,6 @@ form i
 .item1
 {
 	margin-right: 3%;
-	
 }
 .item2
 {
@@ -114,8 +128,7 @@ section :nth-child(2)
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	
+	justify-content: space-around;	
 	align-items: space-between;
 }
 section img
@@ -193,20 +206,13 @@ nav li
 nav a
 {
 	text-decoration: none;
-	
-	
 }
 
-nav a:focus
+nav a:hover
 {
-	border: 3px blue solid;
+	border: 3px black solid;
 	padding: 20px;
 	border-style: solid none none none;
-}
-
-nav a:visited
-{
-	/*color: black;*/
 }
 
 header
