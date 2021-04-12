@@ -265,13 +265,19 @@ nav li
 nav a
 {
 	text-decoration: none;
+	color: black;
 }
 
 nav a:hover
 {
-	border: 3px black solid;
+	border: 3px blue solid;
 	padding: 20px;
+	color: blue;
 	border-style: solid none none none;
+}
+#inscription
+{
+	color: blue;
 }
 
 header
