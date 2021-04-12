@@ -106,7 +106,7 @@ form
 	border-radius: 15px;
 
 }
-#hebergement h1
+#hebergement h1 
 {
 	font-size: 1.3em;
 	padding-top: 15px;
@@ -184,23 +184,69 @@ aside
 	border: 3px solid white;
 	background: white;
 	width: 85%;
+	height: 142px;
 	border-radius: 15px;
 	margin-bottom: 20px;
+	margin-top: 10px;
 
 }
 aside img
 {
-	width:50%;
+	width:100%;
 	border-radius: 15px 0 0 15px;	
+	height: 140px;
+	margin-right: 0px;
+	padding-left: 2px;
+
+	
+}
+
+.two
+{
+	margin-top: 0px;
+	width: 45%;
+}
+.lateral_one
+{
+	
+	width: 60%;
 	height: 120px;
+	padding-left: 15px;
+	margin-left: 0px;
 }
 
 ._items
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
+aside a
+{
+	display: flex;
+	justify-content: flex-start;
+}
+#lateral h1
+{
+	font-size: 1.3em;
+	padding-top: 15px;
+	padding-left: 0px;-----------------------------
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*below css*/
+
 .below
 {
 	border: 2px blue solid;
@@ -209,12 +255,6 @@ aside img
 	height: 300px;
 
 }
-
-
-
-
-/*below css*/
-
 
 
 
