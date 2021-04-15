@@ -122,7 +122,10 @@ section :nth-child(2)
 {
 	padding-left: 10px;
 }
-
+.normal
+{
+	font-weight: normal;
+}
 
 
 
