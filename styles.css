@@ -6,12 +6,124 @@
 {} */ 
 
 /*la barre de recherche*/
+/*@media screen and (max-width: 1280px)
+{
+	#all_page
+	{
+		width: auto;
+	}
+	nav
+	{	display: flex;
+		flex-direction: row;
+	}
+}
+*/
+
+/* css body-----------------------------------------*/
+
+body
+{
+	font-family: Raleway-medium, sans-serif;
+	margin:0%;
+}
+@font-face
+{
+    font-family: 'raleway-medium';
+    src: url('raleway-1/raleway-medium.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+img
+{
+	object-fit: cover;
+}
+
+/* css  id all_page-------------------------------*/
+#all_page
+{
+	padding-top: 100px;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin: auto;
+	position: relative;
+}
 
 
+/* css Header-----------------------------------*/
+header
+{	
+	font-family: Raleway-medium, sans-serif;	
+}
+header h1
+{
+	font-size: 1.3em;
+}
+
+
+/* css id title*/
+#logo img
+{
+	width: 100px;
+	height: 40px;
+}
+#title
+ {
+ 	display: flex;
+ 	flex-direction: row;
+ }
+#logo
+{
+	width: 70%;
+}
+/* css nav -----------------------------------*/
+ 
+nav
+{
+	display: flex;
+	flex-direction: row;
+	height: 30%;
+	height: 30%;
+	width: 30%;
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	margin-right: 0%;
+	justify-content: space-between;
+}
+nav li
+{
+	margin-right:60px;  
+}
+nav a
+{
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover
+{
+	border: 3px blue solid;
+	padding: 20px;
+	color: blue;
+	border-style: solid none none none;
+}
+#inscription
+{
+	color: blue;
+}
+/*css form-------------------------------------*/
 form
 {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
+	margin-top: 20px;
 }
 
 .marker
@@ -38,6 +150,7 @@ form
 	border: 3px #F2F2F2 solid;
 	margin-left:-2px;
 	padding-left:10px; 
+	padding-right: 60px;
 
 }
 
@@ -56,12 +169,10 @@ form
 	padding-right: 15px;
 }
 
-/*filtre css*/
-
+/*css filtre------------------------------------*/
 #filtre
 {	
-	/*width:900px;  150% avant------------------*/
-	width:900px;
+	width:70%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -92,25 +203,45 @@ form
 
 .item1
 {
-	margin-right: 3%;
+	margin-right: 9%;
 }
 .item2
 {
 	text-indent: 1em;
 }
 
+/*css section-------------------------------------*/
 
-
-
-/*css section*/
-
+section i
+{
+	color: #0065FC;
+}
+#quantity i
+{
+	color: white;
+	border: 1px solid #F2F2F2;
+	background:radial-gradient(#0065FC, #F2F2F2 ,#F2F2F2);
+	border-radius: 50%;
+	padding: 0px;
+}
+#quantity
+{
+	margin-top: 50px;
+	margin-bottom: 50px;	
+}
+#contenu
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+	align-items: space-between;
+}
 #hebergement
 {
 	background:#F2F2F2;
-	width: 60%;
+	width: 65%;
 	height: 65%;
 	border-radius: 15px;
-
 }
 #hebergement h1 
 {
@@ -126,11 +257,6 @@ section :nth-child(2)
 {
 	font-weight: normal;
 }
-
-
-
-
-
  #afficher
 {
 	font-size: 1.3em;
@@ -139,13 +265,6 @@ section :nth-child(2)
 	font-weight: bold;
 }
 
-#contenu
-{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;	
-	align-items: space-between;
-}
 section img
 {
 	width: 100%;
@@ -160,30 +279,11 @@ section
 	width: 25%;
 	border-radius: 15px;
 	margin-bottom: 20px;
-
 	
 }
 .one
 {
 	margin-top: 0px;
-}
-section i
-{
-	color: #0065FC;
-}
-#quantity i
-{
-	color: white;
-	border: 1px solid #F2F2F2;
-	background:radial-gradient(#0065FC, #F2F2F2 ,#F2F2F2);
-	border-radius: 50%;
-	padding: 0px;
-}
-
-a
-{
-	text-decoration: none;
-	color: black;
 }
 
 /* couleur grise des étoiles*/
@@ -199,26 +299,16 @@ a
 	color: #F2F2F2;
 }
 
-
-
-
-
-
-
-
-
-/*css aside*/
+/*css aside---------------------------------------*/
 #lateral
 {
 	background:#F2F2F2;
-	width: 30%;
-	margin-right: 5%;
+	width: 32%;
 	border-radius: 15px;
 	border:1px #F2F2F2 solid;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	
+	justify-content: center;	
 }
 aside
 {	
@@ -229,7 +319,6 @@ aside
 	border-radius: 15px;
 	margin-bottom: 20px;
 	/*margin-top: 10px;*/
-
 }
 aside img
 {
@@ -237,9 +326,7 @@ aside img
 	border-radius: 15px 0 0 15px;	
 	height: 140px;
 	margin-right: 0px;
-	padding-left: 2px;
-
-	
+	padding-left: 2px;	
 }
 
 .two
@@ -249,7 +336,6 @@ aside img
 }
 .lateral_one
 {
-	
 	width: 60%;
 	height: 120px;
 	padding-left: 15px;
@@ -278,14 +364,13 @@ aside i
 	color: #0065FC;
 }
 
-
-/*below css*/
+/*css below-----------------------------------------*/
 
 .below
 {
 	border: 2px white solid;
 	margin-top: 1%;
-	width: 95%;
+	width: 100%;
 	height: 500px;
 	display: flex;
 	justify-content: space-between;
@@ -411,79 +496,14 @@ aside i
 	font-size: 1.3em;
 }
 
-
-
-/*header*/
-#all_page
-{
-	width: 90%;
-	padding-top: 100px;
-	margin: auto;
-	position: relative;
-}
-
-#logo img
-{
-	width: 100px;
-	height: 40px;
-}
-header h1
-{
-	font-size: 1.3em;
-
-}
-
-/* filtre*/
-
-nav ul
-{
-	list-style-type: none;
-	display: flex;
-}
-nav li
-{
-	margin-right:60px;
-}
-nav a
-{
-	text-decoration: none;
-	color: black;
-}
-
-nav a:hover
-{
-	border: 3px blue solid;
-	padding: 20px;
-	color: blue;
-	border-style: solid none none none;
-}
-#inscription
-{
-	color: blue;
-}
-
-header
-{	
-	font-family: Raleway-medium, sans-serif;
-	display: flex;
-	justify-content: space-between;
-	width: 900px;/*ajouté ------------------------------------*/
-	
-}
-nav
-{
-	display: flex;
-	flex-direction: row;
-	height: 30%;
-}
-/*footer*/
+/*css footer---------------------------------------*/
 footer
 {
 	border: 1px solid #F2F2F2;
 	height: 220px;
 	background: #F2F2F2;
 	display: flex;
-	width: 90%;
+	width: 100%;
 }
 footer div
 {
@@ -499,18 +519,3 @@ footer h1
 
 
 
-
-
-body
-{
-	font-family: Raleway-medium, sans-serif;
-
-
-}
-@font-face
-{
-    font-family: 'raleway-medium';
-    src: url('raleway-1/raleway-medium.ttf')format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
