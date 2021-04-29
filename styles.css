@@ -1,12 +1,8 @@
-
-
-/* css body-----------------------------------------*/
-
+/*css body-----------------------------------------*/
 body
 {
 	font-family: Raleway-medium, sans-serif;
 	margin: 0px;
-
 }
 @font-face
 {
@@ -35,8 +31,7 @@ img
 	position: relative;
 }
 
-
-/* css Header-----------------------------------*/
+/* css Header-------------------------------------*/
 header
 {	
 	font-family: Raleway-medium, sans-serif;	
@@ -68,9 +63,9 @@ nav ul
 	width: 75%;
 }
 
-ul  :nth-child(2),
-ul  :nth-child(3),
-ul  :nth-child(4)
+ul  :nth-child(2),/*Hébergement*/
+ul  :nth-child(3),/*Activités*/
+ul  :nth-child(4)/*S'inscrire*/
 {
 	margin-left:60px;  
 }
@@ -112,15 +107,11 @@ form
   justify-content: center;
   align-items: center;
 }
-::-webkit-input-placeholder
-	 {
-   		font-size: 1.5em;
-     }
-     /*
-::-webkit-input-placeholder {
-   color: black;
-}*/
 
+::-webkit-input-placeholder
+ {
+	font-size: 1.5em;
+ }
 
 #search
 {
@@ -129,7 +120,6 @@ form
 	margin-left:-2px;
 	padding-left:10px; 
 	padding-right: 6em;
-
 }
 
 #search, #filtre,.hotel_n
@@ -155,10 +145,8 @@ form
 /*css filtre------------------------------------*/
 #filtre
 {	
-	
 	display: flex;
 	flex-direction: row;
-
 }
 
 #filtre i
@@ -185,19 +173,9 @@ form
 }
 .titles span
 {
-	
 	margin-left: 15px;
 }
 
-/*
-.item1
-{
-	margin-right: 9%;
-}
-.item2
-{
-	text-indent: 1em;
-}*/
 
 /*css section-------------------------------------*/
 
@@ -240,11 +218,11 @@ section i
 	padding-left: 25px;
 	padding-bottom: 15px;
 }
-section :nth-child(2)
+section :nth-child(2)/* all text Hébergement*/
 {
 	padding-left: 10px;
 }
-.normal
+.price
 {
 	font-weight: normal;
 	margin-left: -10px;
@@ -278,7 +256,7 @@ section
 	margin-top: 0px;
 }
 
-/* couleur grise des étoiles*/
+/* la couleur grise des étoiles*/
 
 #contenu :nth-child(3) :nth-child(8),
 #contenu :nth-child(4) :nth-child(7),
@@ -304,23 +282,15 @@ section
 }
 #lateral h1
 {
-	font-size: 1.1em;
-	/*padding-top: 25px;
-	padding-left: 0px;*/
-	
+	font-size: 1.1em;	
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 	margin:10% 6% -3% 6%;
-
 }
 #chart
 {
 	width: 90%;
-}
-.fa-chart-line
-{
-	
 }
 aside
 {	
@@ -541,7 +511,7 @@ footer p,footer h1, #afficher,.titles,
 	}
 }
 
-/*media query tablette--------------------------------*/
+/*media query tablette 1024px---------------------------*/
 @media screen and (max-width:1024px )
 {
 	ul  :nth-child(2)/*hébergement*/
@@ -587,29 +557,11 @@ footer p,footer h1, #afficher,.titles,
 	{
 		border-bottom:  5px #0065FC solid;
 		border-top: none;
-		color:#0065FC;	
+		color:#0065FC;
+		/*padding-right:50%;	
+		padding-left: 50%;*/
 	}
 	
-	/*supppppppp
-	#line
-	{
-		display: flex;
-		flex-direction: row;
-		margin-top: -6px;
-	}
-	#line1
-	{
-		border-bottom: 5px #0065FC solid;		
-		width:50%;
-		display: none;
-	}
-	#line2
-	{
-		border-bottom: 5px red solid;		
-		width:50%;
-		display: none;
-
-	}*/
 	form
 	{
 		margin-top: 3em;
@@ -626,11 +578,8 @@ footer p,footer h1, #afficher,.titles,
 		border-radius: 20px 20px 20px 20px;
 		margin-left: -20px;
 		width: 60px;
-	}	
-	.marker
-	{
-		
 	}
+
 	/*css filtres----------------*/
 	#filtre
 	{
@@ -642,23 +591,13 @@ footer p,footer h1, #afficher,.titles,
 		width: 100%;
 		font-size: 1.3em;
 	}
-	 .uno
-	{
 	
-	}
-	.dos
-	{
-	
-	}
 	.tres
 	{
 		margin-right: 1.8em;
 		
 	}
-	.cuatro
-	{
-		
-	}
+	
 	.titles
 	{
 		margin-bottom: 1em;			
@@ -827,7 +766,6 @@ footer p,footer h1, #afficher,.titles,
 	.titles
 	{
 		margin-bottom: 1em;	
-		
 	}
 	#quantity
 	{
@@ -850,7 +788,7 @@ footer p,footer h1, #afficher,.titles,
 		background:white;
 	}
 	section
-	{/*#F2F2F2*/
+	{
 		width: 100%;
 		border: 6px solid white;
 		height: 200px;
