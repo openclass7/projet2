@@ -25,9 +25,10 @@ img
 #all_page
 {
 	padding-top: 25px;
-	padding-left: 2%;
-	padding-right: 2%;
-	margin: auto;
+	/*padding-left: 2%;
+	padding-right: 2%;*/
+	margin-right: 2%;
+	margin-left: 2%;
 	position: relative;
 }
 
@@ -43,16 +44,14 @@ header h1
 
 
 /* css nav -----------------------------------*/
-
-nav ul
-{	display: flex;
- 	flex-direction: row;
- 	margin-bottom: 3em;
- 	justify-content: flex-end;
-	list-style-type: none;
-	padding-left: 0px;
+nav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
-
 #logo img
 {
 	width: 7em;
@@ -60,31 +59,27 @@ nav ul
 }
 #logo
 {
-	width: 75%;
+	width: 68%;
 }
-
-ul  :nth-child(2),/*Hébergement*/
-ul  :nth-child(3),/*Activités*/
-ul  :nth-child(4)/*S'inscrire*/
-{
-	margin-left:60px;  
-}
-nav a
-{
-	text-decoration: none;
-	color: black;
-}
-
-nav :nth-child(2) a:hover,
-nav :nth-child(3) a:hover
+.first a:hover,
+.second a:hover
 { border-top: 3px  #0065FC solid;
-	padding: 20px;
+	padding:25px 10px 0px 10px;
 }
-#inscription
+
+.third a
 {
 	color: #0065FC;
 	font-weight: bold;
 }
+ #line1, #line2
+{
+	border: 2px  solid #F2F2F2 ;
+	background: #F2F2F2;
+	width: 100%;
+	display: none;	
+}
+
 /*css form-------------------------------------*/
 form
 {
@@ -496,7 +491,7 @@ footer h1
 	font-size: 1.3em;
 	}
 footer p,footer h1, #afficher,.titles,
-#search, #rechercher
+#search, #rechercher,#find
 {
 	cursor: pointer;
 }
@@ -514,54 +509,49 @@ footer p,footer h1, #afficher,.titles,
 /*media query tablette 1024px---------------------------*/
 @media screen and (max-width:1024px )
 {
-	ul  :nth-child(2)/*hébergement*/
-	{		 
-		margin-right: 17%; 
-		order: 3;
-	}
-	ul  :nth-child(3)/*activités*/
-	{
-		margin-left:10%;
-		margin-right: 14%;  
-		order: 3;
-	}
-	ul  :nth-child(4)/*s'inscrire*/
-	{
-		margin-left:60%;
-		margin-bottom: 2em; 
-	}
-		
-	#logo
-	{
-		width: 20%;
-		margin-top: -20px;
-	}
 	nav
-	{
-		border-bottom: 5px #F2F2F2 solid;
-		height: 90px;
-		margin-bottom: 3em;
-	}
-	nav ul
-	{
-		flex-direction: row;
+	{		
 		flex-wrap: wrap;
 	}
-	nav li
+	#logo
 	{
-		width: 20%;	
+		margin-top: -20px;
+		margin-bottom: 40px;
+	}	
+	nav div,#logo
+	{
+		width: 50%;		
+	}
+	.first,.second
+	{
+		text-align:center;
+		order: 3;		
+	}
+	.third
+	{
+		text-align:end;
+	}
+	#line1, #line2
+	{
+		display: block;
+		margin-top: 16px;
+	}
+	.first a:hover ,
+	.second a:hover 
+	{
+	    border-top: none;
+	    color: #0065FC;
+
+	}
+	.first a:hover   #line1,
+	.second a:hover  #line2
+	{
+	   border-top: 3px #0065FC solid;
+	   background: #0065FC;	   		
 	}
 	
-	nav   :nth-child(2) a:hover,
-	nav   :nth-child(3) a:hover
-	{
-		border-bottom:  5px #0065FC solid;
-		border-top: none;
-		color:#0065FC;
-		/*padding-right:50%;	
-		padding-left: 50%;*/
-	}
-	
+
+	/*css form----------*/
 	form
 	{
 		margin-top: 3em;
@@ -610,10 +600,13 @@ footer p,footer h1, #afficher,.titles,
 
 	#lateral
 	{
-		width: 100%;
+		width: 105%;
 		order: -1;
 		margin-bottom: 50px;
-		padding-bottom: 30px;		
+		padding-bottom: 30px;
+		border-radius: 0px;
+		margin-right: -3%;	
+		margin-left: -3%;
 	}
 	.lateral_one i
 	{
@@ -707,37 +700,26 @@ footer p,footer h1, #afficher,.titles,
 		margin-top: 6em;
 		display: block;
 		height: auto;
+		width: 100%;
 	}
+	
 	footer div
 	{
 		margin-right: 30px;
-	}
-	footer div
-	{
-		width: 100%;
 		padding-left: 25px;
 		padding-bottom: 20px;
+	}
+	#all_page
+	{
+		/*padding-left: 4%;
+		padding-right: 2%;*/
 	}
 }
 
 /*media query phone  768px ------------------------------------*/
 @media screen and (max-width: 768px)
 {
-	nav   :nth-child(1) a:hover
-	{
-		border-top: none;
-	}
-	nav   :nth-child(2) a:hover
-	{
-		border-bottom:  5px #0065FC solid;
-		border-top: none;
-	}
 	
-	nav   :nth-child(3) a:hover
-	{
-		border-bottom:  5px #0065FC solid;
-		border-top: none;
-	}
 	
 	
 	header h1
@@ -745,7 +727,7 @@ footer p,footer h1, #afficher,.titles,
 		word-spacing: -2px;
 	}
 	
-/*--------------------------------------*/
+/*css filtre-------------------------*/
 	#filtre
 	{
 		flex-direction: row;
@@ -773,10 +755,6 @@ footer p,footer h1, #afficher,.titles,
 	}
 	/*css lateral--------------*/
 	
-	#lateral
-	{
-		border-radius: 0px;
-	}
 	.lateral_one i
 	{
 		margin-top: 2em;
@@ -814,7 +792,7 @@ footer p,footer h1, #afficher,.titles,
 	}
 	.below
 	{
-		width: 92%;
+		width: 100%;
 		padding-left: 10px;
 	}
 	.below img
@@ -847,21 +825,9 @@ footer p,footer h1, #afficher,.titles,
 	}
 	footer div
 	{
-		width: 100%;
+		
 		padding-left: 25px;
 		padding-bottom: 20px;
 	}
 }
 
-/*media query pont break 328---------------*/
-@media screen and (max-width: 384px)
-{
-	ul  :nth-child(2)/*hébergement*/
-	{		 
-		margin-right: 10%; 
-	}	
-	#lateral h1
-{
-	font-size: .8em;
-}	
-}
