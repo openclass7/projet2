@@ -74,7 +74,7 @@ nav
 }
  #line1, #line2
 {
-	border: 2px  solid #F2F2F2 ;
+	border: 2px  solid #F2F2F3 ;
 	background: #F2F2F2;
 	width: 100%;
 	display: none;	
@@ -125,7 +125,7 @@ form
 	border-radius: 0px 20px 20px 0px;
 	color: white;
 	background: #0065FC;
-	border: 2px #0065FC solid;
+	border: 2px #0066FC solid;
 	height: 60px;
 	width: 8em;
 	font-size: 1.2em;
@@ -237,7 +237,7 @@ section img
 section
 {	
 	border: 3px solid white;
-	background: white;
+	background: rgb(255 255 255);
 	width: 28%;
 	border-radius: 15px;
 	margin-bottom: 20px;
@@ -267,7 +267,7 @@ section
 	background:#F2F2F2;
 	width: 32%;
 	border-radius: 15px;
-	border:1px #F2F2F2 solid;
+	border:1px #F2F2F3 solid;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -286,7 +286,7 @@ section
 }
 aside
 {	
-	border: 3px solid white;
+	border: 3px solid rgb(255 255 255);
 	background: white;
 	width: 85%;
 	height: 142px;
@@ -470,7 +470,7 @@ aside i
 /*css footer---------------------------------------*/
 footer
 {
-	border: 1px solid #F2F2F2;
+	border: 1px solid #F2F2F3;
 	height: 220px;
 	background: #F2F2F2;
 	display: flex;
@@ -547,7 +547,7 @@ footer p,footer h1, #afficher,.titles,
 	.first a:hover   #line1,
 	.second a:hover  #line2
 	{
-	   border-top: 3px #0065FC solid;
+	   border-top: 3px #0066FC solid;
 	   background: #0065FC;	   		
 	}
 	
@@ -592,7 +592,7 @@ footer p,footer h1, #afficher,.titles,
 	.titles
 	{
 		margin-bottom: 1em;	
-		margin-right: 25px;
+		margin-right: 19px;
 		margin-left: unset;		
 	}
 	#filtre i
