@@ -711,7 +711,7 @@ footer p,footer h1, #afficher,.titles,
 		margin-right: 30px;
 		padding-left: 25px;
 		padding-bottom: 20px;
-		width: fit-content;
+		width: unset;
 	}
 }
 
