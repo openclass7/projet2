@@ -235,6 +235,14 @@ section img
 	border-radius: 15px 15px 0 0;	
 	height: 140px;
 }
+section:hover, aside:hover,
+.last_a:hover, .last_ca:hover,
+.last_cb:hover,.last_cc:hover,
+.last_cd:hover
+{
+	 transform: scale(1.03);
+	 transition: ease-in 0.07s;
+}
 
 section
 {	
