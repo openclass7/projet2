@@ -490,12 +490,12 @@ footer h1
 	font-size: 1.3em;
 	}
 footer p,footer h1, #afficher,.titles,
-#search, #rechercher
+ #rechercher
 {
 	cursor: pointer;
 }
 
-/*media query point break 1144px-----------------------*/
+/*media query breakpoint 1144px-----------------------*/
 
 @media screen and (max-width:1144px )
 {	
@@ -836,7 +836,7 @@ footer p,footer h1, #afficher,.titles,
 		padding-bottom: 20px;
 	}
 }
-/*media query point break 477px-----------------------*/
+/*media query breakpoint 477px-----------------------*/
 
 @media screen and (max-width:477px )
 {	
